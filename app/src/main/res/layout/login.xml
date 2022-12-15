@@ -20,7 +20,8 @@
             android:layout_width="286dp"
             android:layout_height="325dp"
             android:contentDescription="@string/firebase_lockup"
-            android:src="@drawable/racoon1" />
+            android:src="@drawable/racoon1"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/titleText"
@@ -35,11 +36,16 @@
             android:id="@+id/status"
             style="@style/ThemeOverlay.MyTextDetail"
             android:text="@string/signed_out"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/detail"
             style="@style/ThemeOverlay.MyTextDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E8EAF6"
             tools:text="Firebase User ID: 123456789abc" />
 
     </LinearLayout>
@@ -49,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/white"
+        android:background="@color/black"
         android:gravity="center_vertical">
 
         <LinearLayout
@@ -66,7 +72,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/hint_email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColorHint="#757575"
+                tools:ignore="TouchTargetSizeCheck"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/fieldPassword"
@@ -74,7 +83,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/hint_password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColorHint="#757575"
+                tools:ignore="TouchTargetSizeCheck"
+                android:autofillHints="" />
         </LinearLayout>
 
         <LinearLayout

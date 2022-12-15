@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "239468049858",
+    "firebase_url": "https://animarker-55875-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "animarker-55875",
+    "storage_bucket": "animarker-55875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239468049858:android:7d65ab4bd59a6a0a31525b",
+        "android_client_info": {
+          "package_name": "org.wit.animarker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239468049858-77ijsklg6rpe4tsjlbsl5gm09jeef97m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC_GIyoTsn23zxK4SWfMA4L_1wK1sAw0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239468049858-77ijsklg6rpe4tsjlbsl5gm09jeef97m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
