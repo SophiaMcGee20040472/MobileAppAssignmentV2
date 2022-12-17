@@ -3,7 +3,7 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700"
+    android:background="@color/charcoal"
     android:orientation="vertical"
     android:weightSum="4">
 
@@ -46,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#E8EAF6"
-            tools:text="Firebase User ID: 123456789abc" />
+            tools:text="Firebase User ID: 12389abc" />
 
     </LinearLayout>
 
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/black"
+        android:background="@color/white"
         android:gravity="center_vertical">
 
         <LinearLayout

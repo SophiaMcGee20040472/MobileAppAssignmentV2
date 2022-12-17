@@ -43,7 +43,6 @@ class AddFragment : Fragment() {
 
         app = MainApp()
         Timber.i("ON CREATE ADD FRAGMENT")
-
     }
 
     override fun onCreateView(

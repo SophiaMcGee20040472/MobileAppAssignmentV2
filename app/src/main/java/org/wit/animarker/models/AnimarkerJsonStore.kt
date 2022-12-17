@@ -88,10 +88,6 @@ class AnimarkerJSONStore(private val context: Context) : AnimarkerStore {
         TODO("Not yet implemented")
     }
 
-    suspend fun findById(id: Long): AnimarkerModel? {
-        TODO("Not yet implemented")
-    }
-
     private fun serialize() {
         val jsonString = gsonBuilder.toJson(animarkers, listType)
         write(context, JSON_FILE, jsonString)

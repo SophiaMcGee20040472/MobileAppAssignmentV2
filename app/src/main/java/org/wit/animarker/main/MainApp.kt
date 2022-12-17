@@ -1,14 +1,19 @@
 package org.wit.animarker.main
 
 import android.app.Application
-import org.wit.animarker.models.AnimarkerManager
+import org.wit.animarker.models.AnimarkerJSONStore
 import org.wit.animarker.models.AnimarkerStore
+import timber.log.Timber
+import timber.log.Timber.i
 
 class MainApp : Application() {
-    lateinit var animarkerStore: AnimarkerStore
+
+    lateinit var animarkers: AnimarkerStore
 
     override fun onCreate() {
         super.onCreate()
-        //animarkerStore = AnimarkerManager
+        Timber.plant(Timber.DebugTree())
+        animarkers = AnimarkerJSONStore(applicationContext)
+        i("Animarker started")
     }
 }

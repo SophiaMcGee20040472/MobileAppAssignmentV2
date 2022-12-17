@@ -12,6 +12,7 @@ import org.wit.animarker.helpers.read
 import org.wit.animarker.helpers.write
 import timber.log.Timber
 import timber.log.Timber.i
+import java.nio.file.Files.exists
 
 const val JSON_FILE1 = "users.json"
 val gsonBuilder2: Gson = GsonBuilder().setPrettyPrinting()
