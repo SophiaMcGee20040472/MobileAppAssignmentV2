@@ -41,7 +41,7 @@ class AddFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        app = MainApp()
+        app = activity?.application as MainApp
         Timber.i("ON CREATE ADD FRAGMENT")
     }
 
@@ -92,6 +92,16 @@ class AddFragment : Fragment() {
                     AnimarkerModel(title = animarker.title, destination = animarker.destination, description = animarker.description, date = animarker.date,image = animarker.image,
                     )
                 )
+                //THIS ADDS TO YOUR FILE
+                app.animarkers.create(AnimarkerModel(
+                    title = animarker.title,
+                    destination = animarker.destination,
+                    description = animarker.description,
+                    date = animarker.date,
+                    image = animarker.image,
+                ))
+
+
                 findNavController().navigateUp()
                 Timber.i("ADDING Animarker %s", animarker)
             } else {

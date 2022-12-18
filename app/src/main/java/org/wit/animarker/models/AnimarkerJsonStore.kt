@@ -90,6 +90,7 @@ class AnimarkerJSONStore(private val context: Context) : AnimarkerStore {
 
     private fun serialize() {
         val jsonString = gsonBuilder.toJson(animarkers, listType)
+        Timber.i("JSON STRING == " + jsonString)
         write(context, JSON_FILE, jsonString)
     }
 

@@ -29,6 +29,7 @@ object AnimarkerManager : AnimarkerStore {
     override fun create(animarker: AnimarkerModel) {
         animarker.id = getId()
         animarkers.add(animarker)
+
         logAll()
     }
 
