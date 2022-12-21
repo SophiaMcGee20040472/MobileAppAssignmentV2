@@ -12,7 +12,7 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient2"
+        android:background="@drawable/side_nav_bar"
         android:padding="16dp">
 
         <ImageView
@@ -45,11 +45,11 @@
             android:id="@+id/destination"
             android:layout_width="91dp"
             android:layout_height="55dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="4dp"
             android:textAlignment="viewStart"
             android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintHorizontal_bias="0.073"
             app:layout_constraintStart_toEndOf="@+id/imageIcon"
             app:layout_constraintTop_toBottomOf="@id/animarkerTitle" />
 
@@ -57,11 +57,11 @@
             android:id="@+id/description"
             android:layout_width="159dp"
             android:layout_height="41dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="72dp"
             android:textAlignment="viewStart"
             android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintHorizontal_bias="0.147"
             app:layout_constraintStart_toEndOf="@+id/imageIcon"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="A Description" />
@@ -70,27 +70,25 @@
             android:id="@+id/date_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="60dp"
             android:paddingTop="15dp"
             android:text="@string/hint_animarkerDate"
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/white"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintHorizontal_bias="0.033"
             app:layout_constraintStart_toEndOf="@+id/imageIcon"
             app:layout_constraintTop_toBottomOf="@id/animarkerTitle" />
 
         <TextView
-            android:id="@+id/date_picker_actions"
+            android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/date_label"
-            android:layout_marginTop="52dp"
-            android:layout_marginEnd="10dp"
+            android:layout_below="@id/date"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.032"
             app:layout_constraintStart_toEndOf="@+id/imageIcon"
             app:layout_constraintTop_toBottomOf="@id/animarkerTitle" />
 

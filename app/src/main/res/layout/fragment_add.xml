@@ -19,7 +19,7 @@
             android:background="@color/colorAccent"
             android:fitsSystemWindows="true"
             app:elevation="0dip"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            app:theme="@style/ThemeOverlay.AppCompat.Light">
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -33,7 +33,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/charcoal"
+                android:background="@drawable/side_nav_bar"
                 android:orientation="vertical">
 
                 <EditText
@@ -89,12 +89,12 @@
                     android:layout_margin="16dp"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/white"
                     android:background="@drawable/rounded_corner"
                     android:fontFamily="@font/east"
                     android:text="@string/button_addImage"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
 
 
                 <ImageView
@@ -132,12 +132,23 @@
                     android:paddingBottom="8dp"
                     android:stateListAnimator="@null"
                     android:text="@string/button_addAnimarker"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/white"
                     android:background="@drawable/rounded_corner"
                     android:fontFamily="@font/east"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+                <RatingBar
+                    android:id="@+id/rBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="71dp"
+                    android:background="@color/purple_300"
+                    android:contentDescription="@string/rate_name"
+                    android:numStars="5"
+                    android:orientation="vertical"
+                    android:progressTint="@color/white"
+                    android:stepSize="0.5"
+                    android:theme="@style/Widget.AppCompat.RatingBar" />
                 <TextView
                     android:id="@+id/animarkerDate"
                     android:layout_width="match_parent"
@@ -148,30 +159,15 @@
                     android:text="@string/select_date"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
+
                 <DatePicker
                     android:id="@+id/date"
-                    android:background="@color/grey"
+                    android:background="@color/purple_300"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:calendarViewShown="false"
                     android:datePickerMode="spinner" />
-
-                <Button
-                    android:id="@+id/pickupLocation"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:backgroundTint="@color/black"
-                    android:background="@drawable/rounded_corner"
-                    android:fontFamily="@font/east"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"
-                    android:stateListAnimator="@null"
-                    android:text="@string/button_location"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
-
 
                 <Button
                     android:id="@+id/deleteAnimarker"
@@ -184,7 +180,7 @@
                     android:stateListAnimator="@null"
                     android:text="@string/button_delete_animarker"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="25sp"
                     android:textStyle="bold"
                     android:visibility="invisible" />
 

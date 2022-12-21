@@ -72,6 +72,10 @@ object AnimarkerManager : AnimarkerStore {
         TODO("Not yet implemented")
     }
 
+    override fun updateImageRef(userid: String, toString: String) {
+        TODO("Not yet implemented")
+    }
+
     fun logAll() {
         animarkers.forEach { Timber.i("${it}") }
     }

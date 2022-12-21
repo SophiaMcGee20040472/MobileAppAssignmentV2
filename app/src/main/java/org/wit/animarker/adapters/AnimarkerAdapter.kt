@@ -32,11 +32,12 @@ class AnimarkerAdapter constructor(private var animarkers: List<AnimarkerModel>,
     class MainHolder(private val binding : CardAnimarkerBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+
         fun bind(animarker: AnimarkerModel, listener: AnimarkerListener) {
             binding.animarkerTitle.text = animarker.title
             binding.description.text = animarker.description
             binding.destination.text= animarker.destination
-            binding.datePickerActions.text= animarker.date
+            binding.date.text= animarker.date
             Picasso.get().load(animarker.image).resize(200,200).into(binding.imageIcon)
             binding.root.setOnClickListener { listener.onAnimarkerClick(animarker) }
         }

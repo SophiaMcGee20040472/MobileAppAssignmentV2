@@ -88,6 +88,10 @@ class AnimarkerJSONStore(private val context: Context) : AnimarkerStore {
         TODO("Not yet implemented")
     }
 
+    override fun updateImageRef(userid: String, toString: String) {
+        TODO("Not yet implemented")
+    }
+
     private fun serialize() {
         val jsonString = gsonBuilder.toJson(animarkers, listType)
         Timber.i("JSON STRING == " + jsonString)

@@ -14,4 +14,5 @@ interface AnimarkerStore {
     fun create(firebaseUser: MutableLiveData<FirebaseUser>, animarker: AnimarkerModel)
     fun delete(userid: String, animarkerid: String)
     fun update(userid: String, animarkerid: String, animarker: AnimarkerModel)
+    abstract fun updateImageRef(userid: String, toString: String)
 }

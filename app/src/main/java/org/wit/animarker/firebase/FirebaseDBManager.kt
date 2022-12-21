@@ -61,6 +61,10 @@ object FirebaseDBManager : AnimarkerStore {
             }
     }
 
+    override fun updateImageRef(userid: String, toString: String) {
+        TODO("Not yet implemented")
+    }
+
     override fun create(firebaseUser: MutableLiveData<FirebaseUser>, animarker: AnimarkerModel) {
         Timber.i("Firebase DB Reference : $database")
 
