@@ -10,6 +10,7 @@ doesn't fully function but it is a nice visual feature.
 I have a Datepicker added for visual effect.
 
 UXL & Class Diagrams
+![Animaker](https://user-images.githubusercontent.com/83893260/209027213-4be1ad00-203a-4f94-85e1-db5fd82b662f.png)
 
 
 UX/ DX APPROACH ADOPTED
